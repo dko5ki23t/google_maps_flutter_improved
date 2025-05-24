@@ -28,6 +28,14 @@ dependencies:
   stream_transform: ^2.0.0
   web: ">=0.5.1 <2.0.0"
 
+  dependency_overrides:
+    {
+      google_maps_flutter_platform_interface:
+        {
+          path: ../../google_maps_flutter/google_maps_flutter_platform_interface,
+        },
+    }
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
