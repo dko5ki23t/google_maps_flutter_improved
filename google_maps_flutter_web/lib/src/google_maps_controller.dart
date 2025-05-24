@@ -254,7 +254,7 @@ class GoogleMapController {
       // POIの場合
       if (event is gmaps.IconMouseEvent && event.placeId != null) {
         _streamController.add(
-          MapPointOfInterestTapEvent(_mapId, event.placeId!),
+          MapPointOfInterestTapEvent(_mapId, PointOfInterestId(event.placeId!)),
         );
       } else {
         // 通常の地図タップ
